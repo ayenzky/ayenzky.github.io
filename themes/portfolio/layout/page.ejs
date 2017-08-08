@@ -1,0 +1,13 @@
+<%- partial('_partial/head') %>
+<body>
+  <!-- Page Wrapper -->
+  <div id="page-wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <%- page.content || body %>
+  </div>
+</div>
+<%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+</body>
+</html>
+

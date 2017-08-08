@@ -1798,7 +1798,8 @@
 		}
 
 			.gallery .group > * {
-				height: 50%;
+				/*height: 50%;*/
+				height:  auto;
 			}
 
 		.gallery .modal {
@@ -2175,7 +2176,7 @@
 		}
 
 			.panel > *.color0 {
-				background-image: url(../../images/overlay.png), linear-gradient(45deg, #3F51B5 20%, #cc2ed4 60%, #CDDC39);
+				background-image: url(../../images/overlay.png), linear-gradient(45deg, #45344c 20%, #673AB7 60%, #3F51B5);
 				background-size: 128px 128px, auto;
 			}
 
@@ -2188,7 +2189,7 @@
 			.panel > *.color2 {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
-				background-color: #e37b7c;
+				background-color: #e53935;
 			}
 
 			.panel > *.color3 {
@@ -2198,9 +2199,9 @@
 			}
 
 			.panel > *.color4 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
-				background-size: 128px 128px, auto;
-				background-color: #353865;
+				/*background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-size: 128px 128px, auto;*/
+				background-color: #4d5192;
 			}
 
 			.panel > *.color1-alt {
@@ -2699,7 +2700,7 @@
 		.panel.color1 {
 			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 			background-size: 128px 128px, auto;
-			background-color: #726193;
+			background-color: #2962ff;
 		}
 
 		.panel.color2 {
@@ -2741,7 +2742,7 @@
 		.panel.color4-alt {
 			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
 			background-size: 128px 128px, auto;
-			background-color: #323459;
+			background-color: #3F51B5;
 		}
 
 	@media screen and (max-width: 736px) {
@@ -3305,6 +3306,12 @@
 			-webkit-flex-direction: row-reverse;
 			-ms-flex-direction: row-reverse;
 			flex-direction: row-reverse;
+		}
+		.panel.banner.right .image.filtered::before{
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
 		}
 
 	@media screen and (max-width: 736px) {
